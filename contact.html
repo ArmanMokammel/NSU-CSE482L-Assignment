@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio | Contact</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1 class="site-title">Arman Mokammel</h1>
-        <p class="tagline">Computer Science Student @ North South University</p>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+        <div class="nav-container py-3">
+            <h1 class="site-title mb-1">Arman Mokammel</h1>
+            <p class="tagline mb-0">Computer Science Student @ North South University</p>
         </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #243d6e;">
+            <div class="nav-container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                    aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <div class="container">
@@ -25,77 +42,96 @@
         <h1>Contact Me</h1>
         <p>I am always open to new opportunities, collaborations, or just a friendly conversation about technology. Feel free to reach out through any of the channels below.</p>
 
-        <hr>
-
-        <h2>Contact Information</h2>
-
-        <div class="contact-info">
-            <p><b>Full Name:</b> Arman Mokammel</p>
-            <p><b>University Email:</b> <a href="mailto:arman.mokammel@northsouth.edu">arman.mokammel@northsouth.edu</a></p>
-            <p><b>Personal Email:</b> <a href="mailto:armanmokammel@gmail.com">armanmokammel@gmail.com</a></p>
-            <p><b>Phone:</b> +880 1700-000000</p>
-            <p><b>Location:</b> Dhaka, Bangladesh</p>
+        <div class="alert alert-success">
+            <strong>###</strong> Use the form below to send a message with your NSU ID.
         </div>
 
-        <hr>
+        <div class="row gy-4">
+            <div class="col-lg-7">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h2 class="h5">Contact Information</h2>
+                        <p><strong>Full Name:</strong> Arman Mokammel</p>
+                        <p><strong>University Email:</strong> <a href="mailto:arman.mokammel@northsouth.edu">arman.mokammel@northsouth.edu</a></p>
+                        <p><strong>Personal Email:</strong> <a href="mailto:armanmokammel@gmail.com">armanmokammel@gmail.com</a></p>
+                        <p><strong>Phone:</strong> +880 1700-000000</p>
+                        <p><strong>Location:</strong> Dhaka, Bangladesh</p>
+                    </div>
+                </div>
 
-        <h2>Online Profiles</h2>
-        <ul>
-            <li><a href="https://github.com/ArmanMokammel/" target="_blank" title="Visit my GitHub">GitHub</a> - My open-source work and repositories</li>
-            <li><a href="https://linkedin.com/arman-mokammel/" target="_blank" title="Visit my LinkedIn">LinkedIn</a> - Professional profile and experience</li>
-            <li><a href="https://ieeensusb.org/member-profile/98955436/" target="_blank" title="IEEE NSU SB">IEEE NSU Student Branch</a> - My Volunteering Workplace</li>
-        </ul>
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="h5">Online Profiles</h2>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="https://github.com/ArmanMokammel/" target="_blank" title="Visit my GitHub">GitHub</a> <span class="badge bg-secondary"> - My open-source work and repositories</span></li>
+                            <li><a href="https://linkedin.com/arman-mokammel/" target="_blank" title="Visit my LinkedIn">LinkedIn</a> <span class="badge bg-secondary"> - Professional profile and experience</span></li>
+                            <li><a href="https://ieeensusb.org/member-profile/98955436/" target="_blank" title="IEEE NSU SB">IEEE NSU Student Branch</a> <span class="badge bg-secondary"> - My Volunteering Workplace</span></li>
+                        </ul>
+                    </div>
+                </div>
 
-        <hr>
+                <h2 class="mt-4">Availability</h2>
+                <table class="table table-bordered">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Day</th>
+                            <th>Available Hours</th>
+                            <th>Preferred Channel</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sunday - Thursday</td>
+                            <td>10:00 AM - 6:00 PM</td>
+                            <td>Email</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Unavailable</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><i>Response time: usually within 666 hours</i></td>
+                            <td>Email / LinkedIn</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-        <h2>Availability</h2>
-        <table>
-            <tr>
-                <th>Day</th>
-                <th>Available Hours</th>
-                <th>Preferred Channel</th>
-            </tr>
-            <tr>
-                <td>Sunday - Thursday</td>
-                <td>10:00 AM - 6:00 PM</td>
-                <td>Email</td>
-            </tr>
-            <tr>
-                <td>Friday</td>
-                <td>Unavailable</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td colspan="2"><i>Response time: usually within 666 hours</i></td>
-                <td>Email / LinkedIn</td>
-            </tr>
-        </table>
+            <div class="col-lg-5">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="h5">Send a Message</h2>
+                        <form action="/contact.html" method="post">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
 
-        <hr>
+                            <div class="mb-3">
+                                <label for="nsu_id" class="form-label">NSU ID</label>
+                                <input type="text" class="form-control" id="nsu_id" required>
+                            </div>
 
-        <h2>Contact Form</h2>
-        <form action="/contact.html" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            <br><br>
-            <label for="nsu_id">NSU ID:</label>
-            <input type="text" id="nsu_id" required>
-            <br><br>
-            <label for="textarea">Message:</label>
-            <textarea id="textarea" required></textarea>
-            <br><br>
-            <button type="submit">Submit</button>
+                            <div class="mb-3">
+                                <label for="textarea" class="form-label">Message</label>
+                                <textarea class="form-control" id="textarea" rows="5" required></textarea>
+                            </div>
 
-        </form>
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
 
-        <br>
-        <a href="index.html" class="btn">&larr; Back to Home</a>
-
+                <a href="index.html" class="btn btn-outline-primary w-100">&larr; Back to Home</a>
+            </div>
+        </div>
     </div>
 
     <footer>
         <p>&copy; 2026 Arman Mokammel - Portfolio</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
