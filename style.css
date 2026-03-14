@@ -40,11 +40,15 @@ header {
 }
 
 .container {
-    width: 800px;
+    max-width: 850px;
+    width: 100%;
     margin: 40px auto;
-    background-color: #ffffff;
-    border: 1px solid #dde3ee;
-    border-top: 4px solid #1a2a4a;
+}
+
+.nav-container {
+    max-width: 850px;
+    width: 100%;
+    margin: auto;
 }
 
 h1 {

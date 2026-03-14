@@ -4,96 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio | About</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1 class="site-title">Arman Mokammel</h1>
-        <p class="tagline">Computer Science Student @ North South University</p>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+        <div class="nav-container py-3">
+            <h1 class="site-title mb-1">Arman Mokammel</h1>
+            <p class="tagline mb-0">Computer Science Student @ North South University</p>
         </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #243d6e;">
+            <div class="nav-container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                    aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <div class="container">
 
-        <h1>About Me</h1>
+        <div class="row gy-4">
+            <div class="col-lg-4">
+                <div class="card shadow-sm">
+                    <img src="https://api.ieeensusb.org/media_files/user_profile_pictures/98955436_profile_picture.jpg"
+                        class="card-img-top" alt="Profile Photo of Arman Mokammel">
+                    <div class="card-body">
+                        <h3 class="card-title">Arman Mokammel</h3>
+                        <p class="card-text">CSE Student @ NSU</p>
+                        <p>
+                            <span class="badge bg-primary">Full Stack</span>
+                            <span class="badge bg-info text-dark">Open Source</span>
+                            <span class="badge bg-warning text-dark">IEEE NSU SB</span>
+                        </p>
+                        <a href="projects.html" class="btn btn-primary btn-sm">View Projects</a>
+                    </div>
+                </div>
+            </div>
 
-        <figure>
-            <img src="https://api.ieeensusb.org/media_files/user_profile_pictures/98955436_profile_picture.jpg" alt="Profile Photo of Arman Mokammel" width="200">
-            <figcaption>Arman Mokammel - CSE Student, NSU Batch 2022</figcaption>
-        </figure>
+            <div class="col-lg-8">
+                <h2>Who Am I?</h2>
+                <p>My name is <b>Arman Mokammel</b> and I am a forth-year <mark>Computer Science</mark> student at North South University, Dhaka. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit ipsam aliquid, accusamus voluptatem sequi itaque alias totam pariatur minima!</p>
+                <p>I started programming in <i>Class 6</i> when I wrote my first "Hello, World!" program in C#. Since then I have never stopped learning. Today I work with web technologies, databases, and web infrastructure on a daily basis.</p>
 
-        <br>
+                <h2 class="mt-4">Education</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Degree / Level</th>
+                                <th>Institution</th>
+                                <th>Year</th>
+                                <th>Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>B.Sc. Computer Science</td>
+                                <td>North South University</td>
+                                <td>2022 - Present</td>
+                                <td>CGPA 5.75</td>
+                            </tr>
+                            <tr>
+                                <td>A-Levels</td>
+                                <td>PLAYPEN</td>
+                                <td>2022</td>
+                                <td>GPA 10.00</td>
+                            </tr>
+                            <tr>
+                                <td>O-Levels</td>
+                                <td>PLAYPEN</td>
+                                <td>2020</td>
+                                <td>GPA 10.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-        <h2>Who Am I?</h2>
-        <p>
-            My name is <b>Arman Mokammel</b> and I am a forth-year <mark>Computer Science</mark> student at North South University, Dhaka. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit ipsam aliquid, accusamus voluptatem sequi itaque alias totam pariatur minima!
-        </p>
+                <h2 class="mt-4">Interests &amp; Hobbies</h2>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item">Building small web applications and browser tools</li>
+                    <li class="list-group-item">Reading about Artificial Intelligence and Machine Learning</li>
+                    <li class="list-group-item">Contributing to open-source repositories on GitHub</li>
+                    <li class="list-group-item">Playing chess online (rated ~1400 on Chess.com)</li>
+                    <li class="list-group-item">Photography and photo editing</li>
+                </ul>
 
-        <p>
-            I started programming in <i>Class 6</i> when I wrote my first "Hello, World!" program in C#. Since then I have never stopped learning. Today I work with web technologies, databases, and web infrastructure on a daily basis.
-        </p>
+                <h2>Languages</h2>
+                <dl>
+                    <dt>Bangla</dt>
+                    <dd>Native speaker</dd>
 
-        <hr>
+                    <dt>English</dt>
+                    <dd>Fluent</dd>
+                </dl>
 
-        <h2>Education</h2>
-        <table>
-            <tr>
-                <th>Degree / Level</th>
-                <th>Institution</th>
-                <th>Year</th>
-                <th>Result</th>
-            </tr>
-            <tr>
-                <td>B.Sc. Computer Science</td>
-                <td>North South University</td>
-                <td>2022 - Present</td>
-                <td>CGPA 5.75</td>
-            </tr>
-            <tr>
-                <td>A-Levels</td>
-                <td>PLAYPEN</td>
-                <td>2022</td>
-                <td>GPA 10.00</td>
-            </tr>
-            <tr>
-                <td>O-Levels</td>
-                <td>PLAYPEN</td>
-                <td>2020</td>
-                <td>GPA 10.00</td>
-            </tr>
-        </table>
-
-        <hr>
-
-        <h2>Interests & Hobbies (Absolutely AI generated)</h2>
-        <ul>
-            <li>Building small web applications and browser tools</li>
-            <li>Reading about Artificial Intelligence and Machine Learning</li>
-            <li>Contributing to open-source repositories on GitHub</li>
-            <li>Playing chess online (rated ~1400 on Chess.com)</li>
-            <li>Photography and photo editing</li>
-        </ul>
-
-        <hr>
-
-        <h2>Languages</h2>
-        <dl>
-            <dt>Bangla</dt>
-            <dd>Native speaker</dd>
-
-            <dt>English</dt>
-            <dd>Fluent - IELTS Band 10</dd>
-        </dl>
-
-        <br>
-        <a href="projects.html" class="btn">See My Projects &rarr;</a>
+                <a href="projects.html" class="btn btn-outline-primary mt-3">See My Projects &rarr;</a>
+            </div>
+        </div>
 
     </div>
 
@@ -101,5 +124,6 @@
         <p>&copy; 2026 Arman Mokammel - Portfolio</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

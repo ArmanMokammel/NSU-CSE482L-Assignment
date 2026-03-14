@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio | Skills</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1 class="site-title">Arman Mokammel</h1>
-        <p class="tagline">Computer Science Student @ North South University</p>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+        <div class="nav-container py-3">
+            <h1 class="site-title mb-1">Arman Mokammel</h1>
+            <p class="tagline mb-0">Computer Science Student @ North South University</p>
         </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #243d6e;">
+            <div class="nav-container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                    aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="skills.html">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <div class="container">
@@ -25,87 +42,149 @@
         <h1>My Skills</h1>
         <p>Below is a summary of the technologies and tools I have learned and used throughout my studies and personal projects.</p>
 
-        <hr>
+        <h2 class="mt-4">Programming Languages</h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Language</th>
+                        <th>Proficiency Level</th>
+                        <th>Years of Use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td><span class="badge bg-success">Advanced</span></td>
+                        <td>3 years</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td><span class="badge bg-info text-dark">Intermediate</span></td>
+                        <td>2 years</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td><span class="badge bg-info text-dark">Intermediate</span></td>
+                        <td>3 years</td>
+                    </tr>
+                    <tr>
+                        <td>C / C++</td>
+                        <td><span class="badge bg-info text-dark">Intermediate</span></td>
+                        <td>3 years</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td><span class="badge bg-info text-dark">Intermediate</span></td>
+                        <td>3 years</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <h2>Programming Languages</h2>
-        <table>
-            <tr>
-                <th>Language</th>
-                <th>Proficiency Level</th>
-                <th>Years of Use</th>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td><mark>Advanced</mark></td>
-                <td>3 years</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td><mark>Intermediate</mark></td>
-                <td>2 years</td>
-            </tr>
-            <tr>
-                <td>Java</td>
-                <td>Intermediate</td>
-                <td>3 years</td>
-            </tr>
-            <tr>
-                <td>C / C++</td>
-                <td>Intermediate</td>
-                <td>3 years</td>
-            </tr>
-            <tr>
-                <td>SQL</td>
-                <td>Intermediate</td>
-                <td>3 years</td>
-            </tr>
-        </table>
-
-        <hr>
-
-        <h2>Web Technologies</h2>
-        <ul>
-            <li><b>HTML5</b> - Semantic markup, forms, multimedia</li>
-            <li><b>JavaScript</b> - DOM manipulation, events, fetch API</li>
-            <li><b>Django (Python)</b> - REST APIs, Server Backend, Django Server-side templating</li>
-        </ul>
-
-        <hr>
+        <h2 class="mt-4">Web Technologies</h2>
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <ul class="list-unstyled mb-0">
+                    <li><span class="badge bg-primary me-2">HTML5</span> Semantic markup, forms, multimedia</li>
+                    <li><span class="badge bg-primary me-2">JavaScript</span> DOM manipulation, events, fetch API</li>
+                    <li><span class="badge bg-primary me-2">Django (Python)</span> REST APIs, Server Backend, templates</li>
+                </ul>
+            </div>
+        </div>
 
         <h2>Tools & Platforms</h2>
-        <ol>
-            <li>Git & GitHub - version control and collaboration</li>
-            <li>VS Code - primary code editor</li>
-            <li>MySQL & PostgreSQL - relational databases</li>
-            <li>Linux (Ubuntu) - development environment</li>
-            <li>Figma - UI/UX wireframing and prototyping</li>
+        <ol class="list-group list-group-numbered mb-4">
+            <li class="list-group-item">Git & GitHub - version control and collaboration</li>
+            <li class="list-group-item">VS Code - primary code editor</li>
+            <li class="list-group-item">MySQL & PostgreSQL - relational databases</li>
+            <li class="list-group-item">Linux (Ubuntu) - development environment</li>
+            <li class="list-group-item">Figma - UI/UX wireframing and prototyping</li>
         </ol>
 
-        <hr>
-
         <h2>Relevant Coursework</h2>
-        <dl>
-            <dt>CSE115 - Programming Language I</dt>
-            <dd>Introduction to Python; variables, loops, functions, file handling.</dd>
+        <div class="accordion" id="courseworkAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        CSE115 - Programming Language I
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#courseworkAccordion">
+                    <div class="accordion-body">
+                        Introduction to Python; variables, loops, functions, file handling.
+                    </div>
+                </div>
+            </div>
 
-            <dt>CSE225 - Data Structures</dt>
-            <dd>Arrays, linked lists, stacks, queues, trees, graphs, sorting & searching algorithms.</dd>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        CSE225 - Data Structures
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#courseworkAccordion">
+                    <div class="accordion-body">
+                        Arrays, linked lists, stacks, queues, trees, graphs, sorting & searching algorithms.
+                    </div>
+                </div>
+            </div>
 
-            <dt>CSE311 - Database Systems</dt>
-            <dd>Relational model, SQL, normalization, transactions.</dd>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        CSE311 - Database Systems
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#courseworkAccordion">
+                    <div class="accordion-body">
+                        Relational model, SQL, normalization, transactions.
+                    </div>
+                </div>
+            </div>
 
-            <dt>CSE370 - Software Engineering</dt>
-            <dd>SDLC, Agile methodology, requirements analysis, design patterns.</dd>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        CSE370 - Software Engineering
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#courseworkAccordion">
+                    <div class="accordion-body">
+                        SDLC, Agile methodology, requirements analysis, design patterns.
+                    </div>
+                </div>
+            </div>
 
-            <dt>CSE465 - Machine Learning</dt>
-            <dd>Supervised / unsupervised learning, neural networks, evaluation metrics.</dd>
-        </dl>
-
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        CSE465 - Machine Learning
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#courseworkAccordion">
+                    <div class="accordion-body">
+                        Supervised / unsupervised learning, neural networks, evaluation metrics.
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
         <p>&copy; 2026 Arman Mokammel - Portfolio</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
