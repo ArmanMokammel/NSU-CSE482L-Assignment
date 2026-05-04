@@ -23,7 +23,7 @@ const About = () => {
             <div className="row gy-4">
                 <div className="col-lg-4">
                     <Card
-                        image="https://api.ieeensusb.org/media_files/user_profile_pictures/98955436_profile_picture.jpg"
+                        image="https://avatars.githubusercontent.com/u/22028960?v=4"
                         title="Arman Mokammel"
                         description="CSE Student @ NSU"
                     >

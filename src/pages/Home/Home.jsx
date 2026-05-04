@@ -9,8 +9,8 @@ const Home = ({ isDarkMode }) => {
     const highlights = [
         { category: 'Degree', detail: 'B.Sc. in Computer Science' },
         { category: 'University', detail: 'North South University' },
-        { category: 'Current CGPA', detail: '3.85 / 4.00' },
-        { category: 'Expected Graduation', detail: 'Spring 2026' },
+        { category: 'Current CGPA', detail: '4.85 / 4.00' },
+        { category: 'Expected Graduation', detail: 'Spring 2027' },
         { category: 'Interests', detail: 'Web Development, AI, Open Source' },
     ];
 
